@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { HomePage } from './pages/Home/HomePage';
 import { CatalogPage } from './pages/Catalog/CatalogPage';
 import { EspecieUnoPage } from './pages/especie-uno/EspecieUnoPage';
@@ -36,7 +36,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -68,6 +68,6 @@ export default function App() {
         <Route path="/amenazas" element={<AmenazasPage />} />
         <Route path="/condiciones" element={<CondicionesPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
