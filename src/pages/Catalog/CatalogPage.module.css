@@ -9,9 +9,9 @@
 
 .contentWrapper {
   width: 100%;
-  max-width: 1200px; /* <--- Asegura un límite máximo igual al de tu barra superior (ajusta este valor si tu barra usa otra medida exacta como 1140px o 1280px) */
+  max-width: 1100px; /* <--- Ancho ajustado para alinearse de forma exacta con los límites de la barra superior */
   margin: 0 auto;
-  padding: 24px 25px; 
+  padding: 24px 15px; /* <--- Márgenes laterales simétricos */
   box-sizing: border-box;
 }
 
