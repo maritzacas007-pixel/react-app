@@ -1,0 +1,36 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 50px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 8px;
+  color: var(--color-text-soft);
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.5vw, 22px);
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 7vw, 64px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.description {
+  margin-top: 8px;
+  color: var(--color-text);
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 16px 30px;
+  }
+}

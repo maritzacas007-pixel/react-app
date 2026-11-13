@@ -1,0 +1,45 @@
+/* Tokens de diseño: colores, tipografía, espaciado, radios y sombras */
+:root {
+  /* Colores */
+  --color-primary: #11261a;
+  --color-primary-dark: #0a2e1a;
+  --color-text: #334d3b;
+  --color-text-soft: #2c4a35;
+  --color-white: #ffffff;
+  --color-surface: #f7f9f6;
+  --color-surface-alt: #eef3ef;
+  --color-accent: #d8e8dc;
+  --color-accent-strong: #d2e2d5;
+  --color-border: #d8e2dc;
+  --color-border-strong: #b2c4a7;
+  --color-line: #c2d4c5;
+  --color-placeholder: #e6f0ea;
+  --color-map-bg: #cbd8c3;
+  --color-pin: #ea4335;
+
+  /* Tipografía */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Radios */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Sombras */
+  --shadow-card: 0 6px 16px rgba(0, 0, 0, 0.08);
+  --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Layout */
+  --page-gutter: 12%;
+  --container-max: 1600px;
+
+  /* Imagen de fondo */
+  --bg-image: url('/assets/botanical-background.jpeg');
+}
+
+/* Breakpoints usados en los componentes:
+   - tablet:  max-width: 900px
+   - móvil:   max-width: 600px */

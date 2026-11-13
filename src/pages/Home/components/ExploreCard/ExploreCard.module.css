@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background-color: var(--color-white);
+}
+
+.image {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.body {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 5px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-alt);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-accent-strong);
+  font-size: 13px;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.speciesBtnLink {
+  display: block;
+  width: 100%;
+  background-color: #1a3322;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.speciesBtnLink:hover {
+  background-color: #112216;
+}

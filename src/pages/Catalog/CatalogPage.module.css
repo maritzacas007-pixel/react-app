@@ -1,0 +1,255 @@
+.page {
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contentWrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.backContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Botón Volver atrás: Verde institucional sólido */
+.backBtn {
+  background-color: #2c5e3b !important;
+  opacity: 1 !important;
+  filter: none !important;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background-color: #1f4329 !important;
+}
+
+.headerSection {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Título principal: Hereda exactamente la tipografía global de la app */
+.mainTitle {
+  font-size: 26px;
+  color: #1a3322;
+  font-weight: 800;
+  line-height: 1.35;
+  max-width: 950px;
+  margin: 0 auto;
+  letter-spacing: -0.3px;
+}
+
+.capsuleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Cápsula de Catálogo de flora */
+.subHeaderCapsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+  border: 2px solid #2c5e3b;
+  padding: 8px 20px;
+  border-radius: 24px;
+  color: #2c5e3b !important;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.filterBar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.searchCard {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  flex: 2;
+  min-width: 280px;
+}
+
+.searchCard input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  color: #2c5e3b;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+.searchCard input::placeholder {
+  color: #555555;
+  font-weight: 400;
+}
+
+.filterCard {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  flex: 1;
+  min-width: 220px;
+}
+
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selectLabel {
+  font-weight: 700;
+  color: #2c5e3b;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.selectPillWide {
+  flex: 1;
+}
+
+.selectPillWide select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  color: #2c5e3b;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Altura ajustada a 360px con cover para que cubra todo el ancho sin líneas blancas a los lados */
+.imageContainer {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.speciesImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+}
+
+.cardContent h3 {
+  font-size: 18px;
+  color: #1a3322;
+  margin: 0;
+  font-weight: 700;
+}
+
+.scientific {
+  color: #2c5e3b;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.family {
+  color: #1a3322;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.family strong {
+  font-weight: 700;
+  color: #2c5e3b;
+}
+
+.speciesBtn {
+  margin-top: 8px;
+  background-color: #2c5e3b;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.speciesBtn:hover {
+  background-color: #1f4329;
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #1a3322;
+  font-size: 16px;
+  padding: 40px;
+  font-weight: 600;
+}
+
+.footerCard {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.footerText {
+  color: #1a3322;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6;
+}

@@ -1,0 +1,241 @@
+.page {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px;
+  
+  /* AQUÍ ESTÁ LA SOLUCIÓN: 
+     Forzamos a que el fondo de esta página use directamente la imagen de los binoculares 
+     (reemplaza '../../assets/binoculares.jpg' con la ruta exacta de tu archivo de binoculares) 
+     y anulamos cualquier otro fondo de colibríes o palmeras de abajo. */
+  background-image: url('../../assets/binoculares.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Si quieres asegurarte de que la imagen tenga una ligera capa oscura 
+   para que tus letras verdes y tarjetas blancas resalten perfectamente, 
+   puedes usar esto o dejarlo tal cual. */
+
+.contentWrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 2; /* Mantiene tu formulario por encima del fondo */
+}
+
+.topBarSection {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.backBtn {
+  background-color: #2c5e3b !important;
+  opacity: 1 !important;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background-color: #1f4329 !important;
+}
+
+.headerSection {
+  text-align: center;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.mainTitle {
+  font-size: 40px;
+  color: #1a3322;
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 950px;
+  margin: 0;
+}
+
+.subTitle {
+  font-size: 20px;
+  color: #2c5e3b;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardBlock {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #eaeaea;
+}
+
+.cardHeaderGreen {
+  color: #ffffff;
+  background-color: #2c5e3b;
+  font-size: 18px;
+  font-weight: 700;
+  margin: -24px -24px 0 -24px;
+  padding: 14px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionDesc {
+  color: #444444;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Estilos del Formulario de Aportes */
+.aporteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formFieldFull {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formField label,
+.formFieldFull label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.formField input,
+.formField select,
+.formFieldFull textarea {
+  padding: 0.7rem;
+  border: 1px solid #95d5b2;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #ffffff;
+  color: #1b4332;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formFieldFull textarea:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 2px rgba(45, 106, 79, 0.15);
+}
+
+.fileInput {
+  padding: 0.4rem 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.fileName {
+  font-size: 0.85rem;
+  color: #2d6a4f;
+  font-weight: 600;
+}
+
+.submitButton {
+  background-color: #2d6a4f;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #1b4332;
+}
+
+.successMessage {
+  background-color: #d8f3dc;
+  color: #1b4332;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #95d5b2;
+}
+
+.successMessage h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #2d6a4f;
+}
+
+.successMessage p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.resetButton {
+  background-color: #2d6a4f;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #1b4332;
+}

@@ -1,0 +1,134 @@
+.title {
+  margin-bottom: 14px;
+  color: var(--color-primary-dark);
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 4vw, 46px);
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.description {
+  margin-bottom: 25px;
+  color: var(--color-text);
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.45;
+  text-align: justify;
+}
+
+.panorama {
+  --panorama-height: 320px;
+  margin-bottom: 35px;
+  border-radius: var(--radius-lg);
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  gap: 35px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationTitle {
+  margin-bottom: 18px;
+  color: var(--color-primary);
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+}
+
+.locationText {
+  margin-bottom: 20px;
+  color: var(--color-text);
+  font-size: clamp(15px, 1.5vw, 17px);
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.legend,
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-alt);
+  color: var(--color-primary);
+}
+
+.legend {
+  margin-bottom: 20px;
+  padding: 14px;
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 28px;
+  border-radius: 11px 11px 2px 2px;
+  background-color: var(--color-pin);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.legendTitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.tag {
+  align-self: flex-start;
+  gap: 8px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tagIcon {
+  font-size: 18px;
+}
+
+.map {
+  min-height: 380px;
+}
+
+@media (max-width: 900px) {
+  .panorama {
+    --panorama-height: 240px;
+  }
+
+  .location {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .panorama {
+    --panorama-height: 180px;
+    margin-bottom: 24px;
+  }
+
+  .description,
+  .locationText {
+    text-align: left;
+  }
+
+  .map {
+    min-height: 260px;
+  }
+}
