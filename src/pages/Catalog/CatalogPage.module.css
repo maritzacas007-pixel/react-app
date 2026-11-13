@@ -8,10 +8,10 @@
 }
 
 .contentWrapper {
-  max-width: 1100px;
   width: 100%;
+  max-width: 1200px; /* <--- Asegura un límite máximo igual al de tu barra superior (ajusta este valor si tu barra usa otra medida exacta como 1140px o 1280px) */
   margin: 0 auto;
-  padding: 24px 20px;
+  padding: 24px 25px; 
   box-sizing: border-box;
 }
 
